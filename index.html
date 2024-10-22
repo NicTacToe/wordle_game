@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = window-width, initial-scale = 1.0">
+    <title>Wordle Game</title>
+    <link rel = "stylesheet" href = "styles.css">
+  </head>
+  <body>
+    <div class = "game-container">
+      <h1>Word Guesser 9000</h1>
+      <div id = "timer">Time: 00:00</div>
+      <div class = "grid" id = "grid"></div>
+      <input type = "text" id = "guessInput" maxlength = "5" placeholder = "Enter guess: "/>
+      <button id = "submitGuess">Submit Guess</button>
+      <p id = "message"></p>
+    </div>
+    <div class = "game-info">
+      <h2 style="color:aliceblue">How to Play</h2>
+      <p>Try to guess the 5-letter word in 6 attempts.</p>
+      <ul style="color:aliceblue">
+        <li>Green: Letter is in the word AND is in the correct position.</li>
+        <li>Yellow: Letter is in the word but is NOT in the correct position.</li>
+        <li>Red: Letter is not in the word.</li>
+      </ul>
+      <p>Good luck and have fun!</p>
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>
